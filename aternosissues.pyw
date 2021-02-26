@@ -1,4 +1,4 @@
-from pyautogui import typewrite,
+from pyautogui import typewrite
 import sys
 
 data = " ".join(sys.argv[1:]).lower()
@@ -17,7 +17,7 @@ aternosissues = {
     'cant remember password': "!article lost",
     'tlauncher': "!article tlauncher",
     'geyser': "!article geyser",
-    'lag': "check https://www.spigotmc.org/threads/guide-server-optimization%E2%9A%A1.283181/",
+    'lag': r"check https://www.spigotmc.org/threads/guide-server-optimization%E2%9A%A1.283181/",
     'essentialsx': "With over 130 commands, EssentialsX provides one of the most comprehensive feature sets out there, providing teleportation, moderation tools, gameplay enhancements and more. Just want the homes and warps? Great. Need a sign shop? Done. Want complex and rich kits with enchantments, custom books and lore? Sorted. Whether you're a small group of friends or a huge server with hundreds of players, we've got the basics covered.",
     'hello': "hello",
     'hi': "hello",
