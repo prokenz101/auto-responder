@@ -38,10 +38,6 @@ aternosissues = {
     'biomes o plenty': "!article o",
     'suggest': '!article suggest',
     'mods': "!video mods",
-    'ask a question': "Get support. Please don't ask to ask: JUST ASK.",
-    'ask question': "Get support. Please don't ask to ask: JUST ASK.",
-    'account suspended': 'yes, that suspension is permanent and it is because you used an afkbot or something',
-    'help': "**We can't help you if you don't ask a question or state your problem.**",
     'more ram': 'you cant do it in aternos but there is a different server hosting service called exaroton which is paid and has better ram etc.',
     'increase ram': 'you cant do it in aternos but there is a different server hosting service called exaroton which is paid and has better ram etc.',
     'increase the ram': 'you cant do it in aternos but there is a different server hosting service called exaroton which is paid and has better ram etc.',
@@ -61,15 +57,8 @@ aternosissues = {
     'rule 14': "14. Advertising in direct messages without explicit consent is forbidden.",
     'rule 15': "15. Asking to join your server, to check the #servers channel etc. counts as advertising.",
     'rule 16': "16. Talking about the  q u e u e   l e n g t h  or asking any questions related to the  q u e u e   l e n g t h  is not allowed. You can read our support article about this and that's all the information we can give you on that: https://support.aternos.org/hc/en-us/articles/360026950812",
-    'fuck': '**Your message contains words/phrases which are not allowed here!**',
-    'shit': '**Your message contains words/phrases which are not allowed here!**',
-    'stfu': "**Your message contains words/phrases which are not allowed here!**",
-    'gay': "**Your message contains words/phrases which are not allowed here!**",
-    'ㅤ': "hangul filler?",
     'all commands': r"https://minecraft.gamepedia.com/Commands",
     'cheat': "!article op",
-    'forever': r"Running your server forever is not possible because Aternos is a 100% free service. They only have limited resources, and they want to make sure that these resources are used by active players. Trying to circumvent that will result in your server being deleted.",
-    '24/7': r"Running your server forever is not possible because Aternos is a 100% free service. They only have limited resources, and they want to make sure that these resources are used by active players. Trying to circumvent that will result in your server being deleted.",
     'unban': "!article unban",
     'thank': "np",
     'can i ask': "Get support. Please don't asv to ask: JUST ASK",
@@ -86,11 +75,9 @@ aternosissues = {
     'discordsrv': r"https://www.youtube.com/watch?v=xKETqmm3yHY",
     'luckperms': "check https://aternos.org/addons/a/spigot/28140 and https://luckperms.net/wiki/Home if you want to know how to use it",
     'permission plugin': "check this, its called luckperms https://aternos.org/addons/a/spigot/28140",
-    'for maintenance': "A common error player may face while trying to connect to Minecraft is that the game's authentication servers are down at the moment. This mostly indicates that the servers are offline at the moment due to maintenance. Usually, the only thing you can do is to  w a i t  for the servers to go back online.",
-    'dynip': r"Try the DynIP, The DynIP is an alternative IP address for your server that helps you to directly connect to your server. Unlike the regular IP, the DynIP changes every time you start your server. To view the DynIP, click on the 'Connect' button (i icon when using bedrock or pocketmine) on the server page while your server is online. Copy it and use enter it as the ip to connect to your server.",
-    'dyn-ip': r"Try the DynIP, The DynIP is an alternative IP address for your server that helps you to directly connect to your server. Unlike the regular IP, the DynIP changes every time you start your server. To view the DynIP, click on the 'Connect' button (i icon when using bedrock or pocketmine) on the server page while your server is online. Copy it and use enter it as the ip to connect to your server.",
-    'all caps': "Please be more respectful, and avoid talking in all caps." 
+    'modpacks': "https://aternos.org/software/modpacks/",
+    'dns': "click on this link and get it https://developers.google.com/speed/public-dns/docs/using"
 }
 for i in aternosissues:
     if i in data.lower():
-        typewrite(aternosissues[i] + "\n")
+        typewrite(aternosissues[i])
