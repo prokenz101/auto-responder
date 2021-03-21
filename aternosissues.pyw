@@ -41,22 +41,6 @@ aternosissues = {
     'more ram': 'you cant do it in aternos but there is a different server hosting service called exaroton which is paid and has better ram etc.',
     'increase ram': 'you cant do it in aternos but there is a different server hosting service called exaroton which is paid and has better ram etc.',
     'increase the ram': 'you cant do it in aternos but there is a different server hosting service called exaroton which is paid and has better ram etc.',
-    'rule 1 ': "1. Be nice and respectful to everybody, this is not a place for hatred, insults etc.",
-    'rule 2': "2. Don’t spam, one message is enough.",
-    'rule 3': "3. Only tag somebody or a group if it’s really necessary.",
-    'rule 4': "4. Listen to all team members and moderators, they can ban you and they will.",
-    'rule 5': "5. Ask any support related questions only in the #support channel.",
-    'rule 6': "6. Wait patiently for an answer and don’t tag anybody.",
-    'rule 7': "7. Don’t repeat your question unless you are asked for it.",
-    'rule 8': "8. Don’t send direct messages to team members and moderators unless they ask you to do that. Please note: You don’t get a guaranteed response here, better use https://support.aternos.org/ or email support@aternos.org for that.",
-    'rule 9': "9. You are only allowed to advertise Aternos servers and related websites/Discord servers.",
-    'rule 10': "10. Only post your server IP/link into the #servers channel.",
-    'rule 11': "11. Your message in the #servers channel has to include a valid Aternos server IP.",
-    'rule 12': "12. Your server has to be online (or at least starting) to advertise it.",
-    'rule 13': "13. You are not allowed to post your server IP more than once per day.",
-    'rule 14': "14. Advertising in direct messages without explicit consent is forbidden.",
-    'rule 15': "15. Asking to join your server, to check the #servers channel etc. counts as advertising.",
-    'rule 16': "16. Talking about the  q u e u e   l e n g t h  or asking any questions related to the  q u e u e   l e n g t h  is not allowed. You can read our support article about this and that's all the information we can give you on that: https://support.aternos.org/hc/en-us/articles/360026950812",
     'all commands': r"https://minecraft.gamepedia.com/Commands",
     'cheat': "!article op",
     'unban': "!article unban",
@@ -76,7 +60,11 @@ aternosissues = {
     'luckperms': "check https://aternos.org/addons/a/spigot/28140 and https://luckperms.net/wiki/Home if you want to know how to use it",
     'permission plugin': "check this, its called luckperms https://aternos.org/addons/a/spigot/28140",
     'modpacks': "https://aternos.org/software/modpacks/",
-    'dns': "click on this link and get it https://developers.google.com/speed/public-dns/docs/using"
+    'dns': "click on this link and get it https://developers.google.com/speed/public-dns/docs/using",
+    'dynip': "https://www.youtube.com/watch?v=yrxSzL0NiwY",
+    'geyser': "https://www.youtube.com/watch?v=J-ixVe840M4",
+    'schem': "https://www.youtube.com/watch?v=w_anhj0ZTPI",
+    'skin': "https://www.youtube.com/watch?v=dlFJxI6qX-E"
 }
 for i in aternosissues:
     if i in data.lower():
