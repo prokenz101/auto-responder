@@ -64,7 +64,8 @@ aternosissues = {
     'dynip': "https://www.youtube.com/watch?v=yrxSzL0NiwY",
     'geyser': "https://www.youtube.com/watch?v=J-ixVe840M4",
     'schem': "https://www.youtube.com/watch?v=w_anhj0ZTPI",
-    'skin': "https://www.youtube.com/watch?v=dlFJxI6qX-E"
+    'skin': "https://www.youtube.com/watch?v=dlFJxI6qX-E",
+    'move': "https://support.exaroton.com/hc/en-us/articles/360017142438-Move-your-Aternos-server-to-exaroton"
 }
 for i in aternosissues:
     if i in data.lower():
