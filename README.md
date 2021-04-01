@@ -11,3 +11,5 @@ Run the file called [aternosissues.ahk](https://github.com/prokenz101/aternos-is
 report bugs if you want
 
 also make sure you dont have any text in the message
+
+click [here](https://github.com/prokenz101/aternos-issue-solver/tree/linux) for linux
