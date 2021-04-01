@@ -4,7 +4,7 @@ import sys
 data = " ".join(sys.argv[1:]).lower()
 
 aternosissues = {
-        'verify username': r"!article verify username",
+    'verify username': r"!article verify username",
     'invalid session': r"!article verify username",
     'cracked': r"!article cracked",
     'backup': r"!article backup",
@@ -34,7 +34,6 @@ aternosissues = {
     'superflat': r"!article superflat",
     'skyfactory 4': r"check https://aternos.org/software/v/modpacks/curse_skyfactory4 and https://www.curseforge.com/minecraft/modpacks/skyfactory-4 to install it on the client",
     'sky factory 4': r"check https://aternos.org/software/v/modpacks/curse_skyfactory4 and https://www.curseforge.com/minecraft/modpacks/skyfactory-4 to install it on the client",
-    "Biomes O' Plenty": r"!article o",
     'biomes o plenty': r"!article o",
     'suggest': r'!article suggest',
     'mods': r"!video mods",
