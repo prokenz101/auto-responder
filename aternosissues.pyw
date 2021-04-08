@@ -20,7 +20,7 @@ aternosissues = {
     'tlauncher': r"!article tlauncher",
     'geyser': r"!article geyser",
     'crash': r"share your log",
-    'lag': r"check https://www.spigotmc.org/threads/guide-server-optimization%E2%9A%A1.283181/",
+    'lag': r"read this https://bluewyechache.gitbook.io/aternos/articles/lag",
     'took too long to start': r"you have too many mods, try removing some",
     'essentialsx': r"With over 130 commands, EssentialsX provides one of the most comprehensive feature sets out there, providing teleportation, moderation tools, gameplay enhancements and more. Just want the homes and warps? Great. Need a sign shop? Done. Want complex and rich kits with enchantments, custom books and lore? Sorted. Whether you're a small group of friends or a huge server with hundreds of players, we've got the basics covered. To visit the wiki, go to https://essentialsx.net/wiki/Home.html.",
     'texture': r"!video resourcepacks",
@@ -47,7 +47,6 @@ aternosissues = {
     "can't join": r'"could you be more specific, like "I cant join because its saying {some error idk}"',
     'cannot join': r'"could you be more specific, like "I cant join because its saying {some error idk}"',
     'stopping': r"!article stop countdown",
-    'seed': r"`/seed`",
     'more than 1 server': r"https://www.youtube.com/watch?v=Q5oB8k_lyk8&feature=youtu.be",
     '2 servers': r"https://www.youtube.com/watch?v=Q5oB8k_lyk8&feature=youtu.be",
     'multiple servers': r"https://www.youtube.com/watch?v=Q5oB8k_lyk8&feature=youtu.be",
@@ -62,7 +61,10 @@ aternosissues = {
     'geyser': r"https://www.youtube.com/watch?v=J-ixVe840M4",
     'schem': r"https://www.youtube.com/watch?v=w_anhj0ZTPI",
     'skin': r"https://www.youtube.com/watch?v=dlFJxI6qX-E",
-    'move': r"https://support.exaroton.com/hc/en-us/articles/360017142438-Move-your-Aternos-server-to-exaroton"
+    'move': r"https://support.exaroton.com/hc/en-us/articles/360017142438-Move-your-Aternos-server-to-exaroton",
+    'hardcore': r"go to https://aternos.org/worlds, then press the green button called `Generate` **NOTE: This will delete your current world so make a backup** and at the very bottom there should be a setting called `Hardcore` like this https://photos.app.goo.gl/uKeUPMeWmQSVTa7F7",
+    'hack': r"Hacking cracked servers: People often come into the discord server or forums and say their servers were hacked. However, these are just as often cracked servers. Cracked servers often get 'hacked' through players suddenly gaining OP. Cracked servers do not actually get 'hacked'. Cracked servers also have more security risks, one of these being the possibility that anyone can log in using any name, and the playerdata bound to that name would be given to anyone using that specific name, making it really easy to get OP that way. Always make sure to use login security plugins like AuthMe Reloaded and/or to use the whitelist. (Reminder that the whitelist may not always work as people can use this same loophole to cheat the whitelist.) Other servers that are not cracked have barely any chance of getting hacked, as the only form for that would be using hack clients like wurst or aristois which can be countered using anticheat plugins, or simply getting staff.",
+    'seed': r"go to https://aternos.org/worlds then click the generate button and type in the seed (NOTE: This will delete your world) after you did that press Generate and start the server"
 }
 for i in aternosissues:
     if i in data.lower():
