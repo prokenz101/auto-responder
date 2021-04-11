@@ -1,7 +1,7 @@
 from pyautogui import typewrite
-import sys
+from sys import argv
 
-data = " ".join(sys.argv[1:]).lower()
+data = " ".join(argv[1:]).lower()
 
 aternosissues = {
     'verify username': r"!article verify username",
@@ -66,8 +66,11 @@ aternosissues = {
     'hack': r"Hacking cracked servers: People often come into the discord server or forums and say their servers were hacked. However, these are just as often cracked servers. Cracked servers often get 'hacked' through players suddenly gaining OP. Cracked servers do not actually get 'hacked'. Cracked servers also have more security risks, one of these being the possibility that anyone can log in using any name, and the playerdata bound to that name would be given to anyone using that specific name, making it really easy to get OP that way. Always make sure to use login security plugins like AuthMe Reloaded and/or to use the whitelist. (Reminder that the whitelist may not always work as people can use this same loophole to cheat the whitelist.) Other servers that are not cracked have barely any chance of getting hacked, as the only form for that would be using hack clients like wurst or aristois which can be countered using anticheat plugins, or simply getting staff.",
     'seed': r"go to https://aternos.org/worlds then click the generate button and type in the seed (NOTE: This will delete your world) after you did that press Generate and start the server",
     'protect': r"worldguard download link: https://aternos.org/addons/a/bukkit/worldguard (NOTE: make sure you get the required dependancies) heres the wiki https://worldguard.enginehub.org/en/latest/",
-    'worldguard': r"worldguard download link: https://aternos.org/addons/a/bukkit/worldguard (NOTE: make sure you get the required dependancies) heres the wiki https://worldguard.enginehub.org/en/latest/"
+    'worldguard': r"worldguard download link: https://aternos.org/addons/a/bukkit/worldguard (NOTE: make sure you get the required dependancies) heres the wiki https://worldguard.enginehub.org/en/latest/",
+    'worldedit': r"download link https://aternos.org/addons/a/bukkit/worldedit use `//` to do commands and heres a wiki https://minecraft-worldedit.fandom.com/wiki/Worldedit_Commands",
+    'claim': r"https://aternos.org/addons/a/bukkit/grief-prevention and this https://dev.bukkit.org/projects/grief-prevention",
+    'griefprevention': r"https://aternos.org/addons/a/bukkit/grief-prevention and this https://dev.bukkit.org/projects/grief-prevention"
 }
 for i in aternosissues:
     if i in data.lower():
-        typewrite(aternosissues[i])
+        typewrite(aternosissues[i], interval=0.04)
