@@ -51,7 +51,8 @@ aternosissues = {
     '2 servers': r"https://www.youtube.com/watch?v=Q5oB8k_lyk8&feature=youtu.be",
     'multiple servers': r"https://www.youtube.com/watch?v=Q5oB8k_lyk8&feature=youtu.be",
     'kicked': r"what does it say when you get kicked?",
-    'login plugin': r"try this https://aternos.org/addons/a/spigot/19362",
+    'login plugin': r"https://aternos.org/addons/list/1/authme",
+    'auth': r"https://aternos.org/addons/list/1/authme",
     'discordsrv': r"https://www.youtube.com/watch?v=xKETqmm3yHY",
     'luckperms': r"check https://aternos.org/addons/a/spigot/28140 and https://luckperms.net/wiki/Home if you want to know how to use it",
     'permission plugin': r"check this, its called luckperms https://aternos.org/addons/a/spigot/28140",
@@ -69,7 +70,9 @@ aternosissues = {
     'worldguard': r"worldguard download link: https://aternos.org/addons/a/bukkit/worldguard (NOTE: make sure you get the required dependancies) heres the wiki https://worldguard.enginehub.org/en/latest/",
     'worldedit': r"download link https://aternos.org/addons/a/bukkit/worldedit use `//` to do commands and heres a wiki https://minecraft-worldedit.fandom.com/wiki/Worldedit_Commands",
     'claim': r"https://aternos.org/addons/a/bukkit/grief-prevention and this https://dev.bukkit.org/projects/grief-prevention",
-    'griefprevention': r"https://aternos.org/addons/a/bukkit/grief-prevention and this https://dev.bukkit.org/projects/grief-prevention"
+    'griefprevention': r"https://aternos.org/addons/a/bukkit/grief-prevention and this https://dev.bukkit.org/projects/grief-prevention",
+    'exaroton': r"Aternos is a 100% free host. If you want a paid server check out https://exaroton.com/. exaroton is a paid host developed that's very similar to Aternos but offers better performance and additional features that just aren't possible on a free service. On exaroton, you only pay for the time that you use the server, instead of paying a fixed price per month. You can read more about the pricing here: https://support.exaroton.com/hc/en-us/articles/360014284958.If you want to move your Aternos server to exaroton read this: https://support.exaroton.com/hc/en-us/articles/360017142438",
+    'install fabric': r"https://www.youtube.com/watch?v=vNz0z1Aht1U&ab_channel=TechInsider"
 }
 for i in aternosissues:
     if i in data.lower():
