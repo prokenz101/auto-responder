@@ -1,27 +1,39 @@
+from json.decoder import JSONDecodeError
 from sys import argv
 from pyautogui import typewrite
-import json
+from json import dumps, loads
+from pathlib import Path
+
+
+def readjson():
+    file = Path('tandr.json')
+    file.touch(exist_ok=True)
+    keysandvalues = {}
+    try:
+        keysandvalues = loads(file.read_text())
+    except JSONDecodeError:
+        file.write_text('{}')
+    return keysandvalues
+
+
+def writejson(data):
+    file = Path('tandr.json')
+    file.touch(exist_ok=True)
+    file.write_text(dumps(data, indent=4))
+
 
 if argv[1] == "CreatingResponse":
-    with open("tandr.json", "r") as outfile:
-        keysandvalues = json.loads(outfile.read())
-    keysandvalues[argv[2]] = argv[3]
-    with open("tandr.json", "w") as outfile:
-        json.dump(keysandvalues, outfile)
+    keysandvalues = readjson()
+    keysandvalues[argv[2]] = " ".join(argv[3:])
+    writejson(keysandvalues)
 
 elif argv[1] == "DeleteResponse":
-    with open("tandr.json", "r") as outfile:
-        keysandvalues = json.loads(outfile.read())
-        keysandvalues.pop(argv[2]) 
-
-    with open("tandr.json", "w") as outfile:
-        json.dump(keysandvalues, outfile)
-    
-    print(f'Response successfully deleted!')
+    keysandvalues = readjson()
+    keysandvalues.pop(argv[2])
+    writejson(keysandvalues)
 
 elif argv[1] == "Use":
-    with open("tandr.json", "r") as outfile:
-        keysandvalues = json.loads(outfile.read())
+    keysandvalues = readjson()
     data = " ".join(argv[2:])
     for i in keysandvalues:
         if i in data.lower():
