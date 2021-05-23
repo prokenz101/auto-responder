@@ -1,6 +1,6 @@
 # Welcome to the Auto-Responder!
 ## This is a small python-ahk script that I made which autoresponds to messages.
-## Modules Required: [AHK](autohotkey.com) and [PyAutoGUI](https://pypi.org/project/PyAutoGUI/)
+## Modules Required: [AHK](https://www.autohotkey.com/) and [PyAutoGUI](https://pypi.org/project/PyAutoGUI/)
 It's designed for discord but might work with other apps.
 
 Run the ahk file to start.
