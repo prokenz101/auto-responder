@@ -38,5 +38,3 @@ elif argv[1] == "Use":
     for i in keysandvalues:
         if i in data.lower():
             typewrite(keysandvalues[i])
-
-input()
