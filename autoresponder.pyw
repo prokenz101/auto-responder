@@ -1,5 +1,6 @@
 from pyautogui import typewrite
 from sys import argv
+from time import sleep
 from json.decoder import JSONDecodeError
 from json import dumps, loads
 from pathlib import Path
@@ -19,15 +20,18 @@ def readjson():
 def writejson(data):
     file = Path('tandr.json')
     file.touch(exist_ok=True)
-    file.write_text(dumps(data, indent=4))
+    file.write_text(dumps(data, indent=2))
 
 
 if argv[1] == "CreatingResponse":
     keysandvalues = readjson()
-    keysandvalues[argv[2]] = " ".join(argv[3:])
+    n = argv.index("|") # Index of the seperator
+    trigger = " ".join(argv[2:n])
+    response = " ".join(argv[n+1:])
+    keysandvalues[trigger] = response
     writejson(keysandvalues)
 
-elif argv[1] == "DeleteResponse":
+if argv[1] == "DeleteResponse":
     keysandvalues = readjson()
     keysandvalues.pop(argv[2])
     writejson(keysandvalues)
@@ -38,3 +42,5 @@ elif argv[1] == "Use":
     for i in keysandvalues:
         if i in data.lower():
             typewrite(keysandvalues[i])
+
+# seperator word is |
