@@ -1,6 +1,6 @@
-from json.decoder import JSONDecodeError
-from sys import argv
 from pyautogui import typewrite
+from sys import argv
+from json.decoder import JSONDecodeError
 from json import dumps, loads
 from pathlib import Path
 
