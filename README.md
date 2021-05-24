@@ -13,7 +13,7 @@ Run the ahk file to start.
 
 Simply press `Alt + F7` to add a response.
 It will prompt you for a trigger and then a response.
-You cannot use multiple words for the trigger, but you can with the response. (I am working on fixing this)
+Multiple words are now supported! You can put as many words as you would like for the trigger and the response.
 Then hover over the message and press `F7`.
 
 If you want to delete responses, then press `Shift + F7` and enter the trigger of the response that you want to delete.
