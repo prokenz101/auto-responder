@@ -18,6 +18,8 @@ Then hover over the message and press `F7`.
 
 If you want to delete responses, then press `Shift + F7` and enter the trigger of the response that you want to delete.
 
+**Deleting multi-word triggers do not work yet, and yes, I am trying to fix the problem**
+
 You can also view the .json file in your default editor using `Alt + Shift + F7`
 
 **NOTE:** Putting `autoresponder.ahk` in `shell:startup` may not work.
