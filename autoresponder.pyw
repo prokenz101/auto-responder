@@ -33,7 +33,7 @@ if argv[1] == "CreatingResponse":
 
 elif argv[1] == "DeleteResponse":
     keysandvalues = readjson()
-    keysandvalues.pop(argv[2])
+    keysandvalues.pop(" ".join(argv[2:]))
     writejson(keysandvalues)
 
 elif argv[1] == "Use":
