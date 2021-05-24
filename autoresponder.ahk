@@ -8,7 +8,7 @@ Return
 !F7::
 InputBox, UserTrigger, Type in a trigger., , 640, 480
 InputBox, UserResponse, Type in a response., , 640, 480
-Run pythonw C:\Items\Code\auto-responder\autoresponder.pyw CreatingResponse %UserTrigger% %UserResponse%
+Run pythonw C:\Items\Code\auto-responder\autoresponder.pyw CreatingResponse %UserTrigger% | %UserResponse%
 Return
 
 +F7::
