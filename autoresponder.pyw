@@ -1,6 +1,5 @@
 from pyautogui import typewrite
 from sys import argv
-from time import sleep
 from json.decoder import JSONDecodeError
 from json import dumps, loads
 from pathlib import Path
@@ -41,4 +40,4 @@ elif argv[1] == "Use":
     data = " ".join(argv[2:])
     for i in keysandvalues:
         if i in data.lower():
-            typewrite(keysandvalues[i])
+            typewrite(keysandvalues[i], interval=0.04)
