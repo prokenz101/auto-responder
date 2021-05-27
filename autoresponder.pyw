@@ -40,4 +40,4 @@ elif argv[1] == "Use":
     data = " ".join(argv[2:])
     for i in keysandvalues:
         if i in data.lower():
-            typewrite(keysandvalues[i], interval=0.04)
+            typewrite(keysandvalues[i], interval=0.09)
