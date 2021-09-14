@@ -6,27 +6,27 @@ from pathlib import Path
 
 
 def readjson():
-    file = Path('tandr.json')
+    file = Path("tandr.json")
     file.touch(exist_ok=True)
     keysandvalues = {}
     try:
         keysandvalues = loads(file.read_text())
     except JSONDecodeError:
-        file.write_text('{}')
+        file.write_text("{}")
     return keysandvalues
 
 
 def writejson(data):
-    file = Path('tandr.json')
+    file = Path("tandr.json")
     file.touch(exist_ok=True)
     file.write_text(dumps(data, indent=2))
 
 
 if argv[1] == "CreatingResponse":
     keysandvalues = readjson()
-    n = argv.index("|") # Index of the seperator
+    n = argv.index("|")  # Index of the seperator
     trigger = " ".join(argv[2:n])
-    response = " ".join(argv[n+1:])
+    response = " ".join(argv[n + 1 :])
     keysandvalues[trigger] = response
     writejson(keysandvalues)
 
